@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - S cube Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f0f4f8;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        
+        .hover-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; }
+    </style>
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="home page.html">S<sup>3</sup>Books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home page.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="books.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="mb-4 fade-in-up">Our Available Books</h2>
+
+        <div class="row mb-5 fade-in-up">
+            <div class="col-md-8 mx-auto">
+                <form action="books.html">
+                    <div class="input-group shadow-sm rounded">
+                        <input type="text" class="form-control form-control-lg border-primary" placeholder="Search for C++, AI, or Electrical Engineering resources..." name="search">
+                        <button class="btn btn-primary px-4 fw-bold" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-3 mb-4 fade-in-up delay-1">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Advanced C++ & Object-Oriented Design</h5>
+                        <p class="card-text text-muted small flex-grow-1">Step-by-step tutorials on operator overloading, friend functions, and complex file handling. Ideal for building efficient, high-performance software applications from the ground up.</p>
+                        <h6 class="fw-bold text-dark mb-3">$45.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mb-4 fade-in-up delay-2">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Foundations of AI & Machine Learning</h5>
+                        <p class="card-text text-muted small flex-grow-1">Explore the math and logic behind neural networks. This guide covers everything needed to integrate intelligent decision-making into your next smart hardware or software project.</p>
+                        <h6 class="fw-bold text-dark mb-3">$55.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mb-4 fade-in-up delay-3">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Electrical Engineering Fundamentals</h5>
+                        <p class="card-text text-muted small flex-grow-1">Understand the physics of modern electronics. Features clear breakdowns of RLC circuits, electromagnetic induction (Faraday & Lenz), and standard wiring safety protocols.</p>
+                        <h6 class="fw-bold text-dark mb-3">$40.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-4">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">The Engineer's Guide to Communication</h5>
+                        <p class="card-text text-muted small flex-grow-1">Enhance your professional toolkit. Learn the fundamentals of active listening, overcoming communication barriers, and facilitating effective group collaboration in technical teams.</p>
+                        <h6 class="fw-bold text-dark mb-3">$35.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-1">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mastering Git & Version Control</h5>
+                        <p class="card-text text-muted small flex-grow-1">Essential workflows for modern software development. Learn repository management, branching strategies, and collaborative coding techniques.</p>
+                        <h6 class="fw-bold text-dark mb-3">$38.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-2">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">IoT Systems & Smart Devices</h5>
+                        <p class="card-text text-muted small flex-grow-1">Design and build connected systems from scratch. Includes practical schematics for real-time monitoring environments and automated sensors.</p>
+                        <h6 class="fw-bold text-dark mb-3">$42.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-3">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Data Structures in C++</h5>
+                        <p class="card-text text-muted small flex-grow-1">Optimize your programming logic. Comprehensive tutorials on memory allocation, arrays, linked lists, trees, and advanced graphing algorithms.</p>
+                        <h6 class="fw-bold text-dark mb-3">$50.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-4">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">The Art of Technical Presentations</h5>
+                        <p class="card-text text-muted small flex-grow-1">Master the stage. Learn how to structure engineering concepts, design impactful posters, and deliver engaging presentations to technical audiences.</p>
+                        <h6 class="fw-bold text-dark mb-3">$30.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-1">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Computer Vision for Engineers</h5>
+                        <p class="card-text text-muted small flex-grow-1">Implement real-time object detection and image processing to power the next generation of AI-driven safety equipment and smart accessories.</p>
+                        <h6 class="fw-bold text-dark mb-3">$58.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-2">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Electrical Wiring & Safety</h5>
+                        <p class="card-text text-muted small flex-grow-1">A rigorous look at industrial and commercial power distribution, load management, and standard fault-prevention protocols.</p>
+                        <h6 class="fw-bold text-dark mb-3">$45.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-3">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Microcontroller Interfacing</h5>
+                        <p class="card-text text-muted small flex-grow-1">Hands-on guides for wiring breadboards, connecting microprocessors, and programming hardware prototypes effectively.</p>
+                        <h6 class="fw-bold text-dark mb-3">$35.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-4">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Modern Embedded C</h5>
+                        <p class="card-text text-muted small flex-grow-1">Bridge the gap between software and hardware. Write efficient, low-level C and C++ code for resource-constrained hardware environments.</p>
+                        <h6 class="fw-bold text-dark mb-3">$48.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-1">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Applied Deep Learning</h5>
+                        <p class="card-text text-muted small flex-grow-1">Move beyond the basics with step-by-step implementations of complex neural network architectures for real-world problem-solving.</p>
+                        <h6 class="fw-bold text-dark mb-3">$60.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 fade-in-up delay-2">
+                <div class="card h-100 shadow-sm hover-card border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Effective Active Listening</h5>
+                        <p class="card-text text-muted small flex-grow-1">Understand the crucial difference between hearing and listening. Strategies for overcoming conversational barriers in engineering team environments.</p>
+                        <h6 class="fw-bold text-dark mb-3">$25.00</h6>
+                        <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 S<sup>3</sup>Books. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
